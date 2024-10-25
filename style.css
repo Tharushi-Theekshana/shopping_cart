@@ -1,0 +1,429 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*home page*/
+    .section-padding {
+        padding: 100px 0;
+    }
+
+    /*carousel */
+
+    .cor {
+        margin: 0;
+    }
+
+    .carousel-item {
+        height: 75vh;
+        min-height: 300px;
+    }
+
+    .carousel-caption {
+        bottom: 220px;
+        z-index: 2;
+    }
+
+    .carousel-caption h5 {
+        font-size: 65px; 
+        text-transform: uppercase;
+        margin-top: 25px;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+        margin: auto;
+        font-size: 25px;
+        line-height: 1.9;
+    }
+
+    /*navigation bar*/
+
+    .navbar {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .navbar li {
+        position: relative;
+    }
+
+    .navbar li a {
+        font-size: 15px;
+        font-weight: 600 ;
+        transition: 0.3s ease;
+    }
+
+    .navbar i {
+        color: #ffffff;
+    }
+
+    .navbar li a :hover,
+    .navbar li a.active{
+        color:whitesmoke;
+    }
+
+    .navbar li a.active::after,
+    .navbar li a:hover::after {
+        content: "";
+        width: 30%;
+        height: 2px;
+        background: whitesmoke;
+        position: absolute;
+        bottom: -4px;
+        left: 20px;
+    }
+
+    #brandSlider .carousel-item img {
+        max-height: 100px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* women*/
+
+    .c-tag h3 {
+        padding: 20px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .maintag {
+        padding-top: 20px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .collection {
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 100%;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 10px;
+    }
+    .wbanner {
+        margin: 20px;
+        border: 2px solid black;
+        border-radius: 20px;
+        width: 100%;
+        max-width: 400px;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .wbanner p {
+        font-size: 24px;
+        font-weight: 800;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        font-weight: 800;
+        color: black;
+        border: 2px solid black;
+        border-radius: 0;
+        background-color: white;
+    }
+
+    .content {
+        height: auto;
+        max-width: 300px;
+        background-color: #000000;
+        border: .2rem solid rgba(255, 255, 255, .1);
+        border-radius: .5rem;
+        overflow: hidden;
+    }
+
+    .content img {
+        width: 100%;
+        border-bottom-left-radius: .6rem;
+        border-bottom-right-radius: .6rem;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+        .wbanner {
+        margin: 10px;
+        padding: 10px;
+        font-size: 18px;
+        }
+
+        .wbanner p {
+        font-size: 20px;
+        }
+
+        .content {
+        max-width: 100%;
+        margin: 10px 0;
+        }
+    }
+
+    .insta .container {
+        margin-top: 100px;
+    }
+
+    .items {
+        text-align: center;
+    }
+
+    .insta p {
+        font-size: 12px;
+    }
+
+    .insta .icon {
+        width: 200px;
+    }
+
+    .insta .container .h4 {
+        font-weight: 800;
+    }
+
+    .button {
+        background-color: #000000;
+        color: white;
+        padding: 15px 40px;
+        font-size: 12px;
+    }
+
+    .img2 {
+        width: 100%;
+    }
+
+    /* Promotion section */
+    .promotion-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: rgba(245, 222, 179, 0.815);
+    }
+
+    .promotion-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Promotion card styling */
+    .promotion-card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .promotion-card h2 {
+        font-weight: 900;
+        font-size: 20px;
+        margin-bottom: 15px;
+        color:  #d32f2f;
+    }
+
+    .promotion-card p {
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: #555;
+    }
+
+    .promotion-card button {
+        padding: 10px 20px;
+        background-color: hwb(0 0% 100%);
+        color:  #ffffff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+    }
+
+    .promotion-card button:hover {
+        background-color: #635e5e;
+    }
+
+
+
+    /*footer*/
+
+    .footer {
+        margin-top: 80px;
+        padding: 20px 0;
+    }
+
+    .footer h6 {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .footer p, .footer a {
+        font-size: 14px;
+        line-height: 24px;
+        color:white;
+    }
+
+    .footer a {
+        text-decoration: none;
+        display: block;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+        color: #007bff;
+    }
+
+    .footer-icons i {
+        font-size: 24px;
+        color: #ffffff;
+        margin-right: 15px;
+    }
+
+    .footer-icons i:hover {
+        color: #007bff;
+    }
+
+    #allright {
+        text-align: center;
+        font-size: 12px;
+        padding-top: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Responsive Text Alignment for Smaller Screens */
+    @media (max-width: 767.98px) {
+        .footer {
+        text-align: center;
+        }
+
+        .footer .row > div {
+        margin-bottom: 20px;
+        }
+    }
+    
+
+/*women page*/
+    .whero_section {
+        background-color: #000000d5;
+        color: #ffffff;
+        padding: 50px 0;
+    }
+
+    .whero_section .img_links {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+        gap: 20px;
+    }
+
+    .whero_section .img_links a {
+        text-align: center;
+        flex: 1;
+        min-width: 120px; /* Ensures a minimum width for links */
+    }
+
+    .whero_section .container h2 {
+        font-weight: 700;
+    }
+
+    .whero_section .container p, a, span {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    /* Styling for the images */
+    .whero_section .img_links img {
+        transition: transform 0.3s ease;
+    }
+
+    /* Hover effect for the images */
+    .whero_section .img_links img:hover {
+        transform: scale(1.1); /* Slight zoom effect */
+    }
+
+    /* Ensure that the section looks good across screen sizes */
+    @media (max-width: 576px) {
+        .whero_section .container h2 {
+            font-size: 24px;
+        }
+
+        .whero_section .container p {
+            font-size: 12px;
+        }
+    }
+
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        border: 1 solid #333;
+        border-radius: 10px;
+
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: opacity 0.9s ease;
+    }
+
+    .image-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .image-container:hover .image-hover {
+        opacity: 1;
+    }
+
+    .image-container:hover img {
+        opacity: 0;
+    }
+
+    .content-container p {
+        margin-top: 15px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 576px) {
+        .content-container {
+            font-size: 14px;
+        }
+    }
+
+    .paginationbar .page-item a , li {
+        color: #000000;
+        font-weight: 800;
+    }
