@@ -96,22 +96,27 @@ body{
         font-family: 'Times New Roman', Times, serif;
     }
 
+    #main-content {
+        margin: 20px;
+    }
+
     .maintag {
-        padding-top: 20px;
-        text-align: center;
+        padding-top: 50px;
         font-weight: 700;
+    }
+
+    .sub-text {
+        font-size: 12px;
+        line-height: 25px;
     }
 
     .collection {
         margin: 0;
-        margin-top: 50px;
+        margin-top: 20px;
         margin-bottom: 50px;
         width: 100%;
         background-color: #ffffff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 10px;
+        
     }
     .wbanner {
         margin: 20px;
